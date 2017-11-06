@@ -25,7 +25,7 @@ public class UserController {
     @RequestMapping("/findById/{id}")
     public ResponseEntity<User> findById(@PathVariable("id") Integer id) {
 
-        System.out.println("hahaha--------");
+        System.out.println("hahaha--------2333333");
 
 
         return restTemplate.getForEntity("http://provide/findById/" + id, User.class);
